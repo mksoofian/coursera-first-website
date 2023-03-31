@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Handlee', cursive;
+}
+
+body {
+  padding: 3rem;
+  background-color: #fff8f0;
+}
+
+a {
+  text-decoration: none;
+  border-style: none;
+  background-color: none;
+}
+
+/* Header and Navigation */
+
+header > img {
+  display: block;
+  height: 85vh;
+  margin: 0 auto 3rem auto;
+  transition: height 2s ease-in-out;
+}
+nav {
+  text-align: center;
+  font-size: 1rem;
+}
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 2rem;
+}
+nav li:hover {
+  transform: translateY(-2px);
+  transition: transform 1s linear;
+}
+nav a {
+  color: #27877f;
+  border-bottom: 0px solid #27877f;
+}
+nav a:hover {
+  color: #be4848;
+  transition: color 0.5s linear;
+}
+
+/* Main: Section #1 */
+
+/* Alternate Banner
+.banner_section {
+  margin: 2rem 0rem;
+  height: 30rem;
+  overflow: hidden;
+  background-image: url(./images/Lucky-Shrub-logos/terracota\ 2.webp);
+  background-size: cover;
+  background-position: 0% 40%;
+  border-radius: 10px;
+}
+.banner_textBg h1 {
+  color: #fff8f0;
+  font-size: 3rem;
+  border-radius: 2rem 2rem;
+  width: 25rem;
+  margin: auto;
+  transform: translateY(80%);
+} */
+.banner_section {
+  border: 0.5rem solid #be4848;
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  animation-name: flashing;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes flashing {
+  0% {
+    border: 0.5rem solid #be4848;
+  }
+  50% {
+    border: 0.5rem solid #27877f;
+  }
+  100% {
+    border: 0.5rem solid #be4848;
+  }
+}
+.b1 {
+  text-align: center;
+}
+.banner_text {
+  color: #fff8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.banner_text h1 {
+  font-size: 3.8rem;
+}
+/* .banner_text p {
+  font-size: 2rem;
+  padding: 1rem;
+  width: fit-content;
+  background-color: black;
+  border-radius: 25% 25%;
+} */
+
+.banner_text button {
+  color: #fff8f0;
+  background-color: rgba(0, 0, 0, 0.472);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 2rem;
+}
+.banner_text button:hover {
+  transition: background-color 0.5s linear;
+  background-color: #be484854;
+}
+.nursery {
+  height: 80vh;
+  background-image: url(./images/Lucky-Shrub-logos/terracota\ 2.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner_overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100%;
+}
+
+/* Main: Section #2 */
+
+.services {
+  color: #27877f;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.article_section {
+  display: flex;
+  gap: 1rem;
+}
+.article_section > article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 30rem;
+}
+.article_section a {
+  color: transparent;
+}
+.art_tile {
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  color: transparent;
+  text-align: center;
+  border-radius: 20px;
+}
+.art_tile h2 {
+  position: relative;
+  top: 50%;
+}
+.article_overlay {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.article_overlay:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+  transition: background-color 0.5s linear;
+  border-radius: 20px;
+}
+.article_overlay:hover a {
+  color: #fff8f0e0;
+}
+.art1 {
+  background-image: url(./images/Lucky-Shrub-logos/backyard.webp);
+}
+.art2 {
+  background-image: url(./images/Lucky-Shrub-logos/frontyard.jpeg);
+}
+.art3 {
+  background-image: url(./images/Lucky-Shrub-logos/fullyard.jpg);
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  margin-top: 2rem;
+  color: #be4848;
+  text-align: right;
+}
+footer > div {
+  flex: 1;
+  margin-top: 1rem;
+}
+.copyright {
+  border-top: 1px solid #27877f;
+}
+footer img {
+  height: 5rem;
+  display: block;
+  margin: 0 auto 0 auto;
+}

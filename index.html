@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="garden design and plant nursery">
+	<meta name="author" content="Lucky Shrubs">
+	<meta property="og:title" content="Lucky Shrubs">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="this website">
+	<meta property="og:description" content="Garden Design and Plant Nursery">
+	<meta property="og:image" content="Asset 2@3x.png">
+
+	<link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <title>Garden Design and Plant</title>
+  </head>
+  <body>
+    <div class="container_body">
+      <header>
+        <img
+          src="./images/Lucky-Shrub-logos/Asset 2@3x.png"
+          alt="Lucky Shrubs Logo"
+          class="main_logo"
+        />
+      </header>
+      <nav>
+        <ul class="nav_list">
+          <li><a href="./index.html">home</a></li>
+          <li><a href="./index.html">nursery</a></li>
+          <li><a href="./index.html">services</a></li>
+          <li><a href="./index.html">about</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section class="banner_section">
+
+			<div class="b1">
+				<div class="nursery">		
+					<div class="banner_overlay">
+						<div class="banner_text ">
+							<h1>Create your garden oasis today</h1>
+							<p>
+								<button href="./index.html" > shop the nursery</button>
+							</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+<!-- Alternate banner  -->
+          <!-- <div class="banner_overlay">
+            <div class="banner_textBg">
+              <h1>Helping you design your dream garden</h1>
+            </div> -->
+          </div>
+        </section>
+        <h2 class="garden design services">- our services -</h2>
+        <section class="article_section">
+          <article class="art_tile art1">
+            <div class="article_overlay">
+              <a href="./index.html"><h2 class="h2_tile">BACKYARD DESIGN</h2></a>
+            </a> </div>
+          </article>
+          <article class="art_tile art2">
+            <div class="article_overlay">
+              <a href="./index.html"><h2 class="h2_tile">FRONT YARD DESIGN</h2></a>
+			</div>
+          </article>
+
+          <article class="art_tile art3">
+            <div class="article_overlay">
+			<a href="./index.html"><h2 class="h2_tile">FULL YARD DESIGN</h2></a>
+			</article>
+        </section>
+      </main>
+      <footer>
+        <div>
+          <img
+            src="./images/Lucky-Shrub-logos/Asset 1@3x.png"
+            alt="Lucky Shrubs Logo"
+          />
+        </div>
+		<div class="copyright">Copyright Lucky Shrub© 2023 </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    // Logo Animated Landing
+    // pt.1 Selectors
+    const mainLogo = document.querySelector('.main_logo');
+    // pt.2 Function: Shrinks logo
+    document.addEventListener('click', () => {
+      mainLogo.style.height = '5rem';
+    });
+	
+  </script>
+</html>
