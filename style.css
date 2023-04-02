@@ -144,36 +144,40 @@ nav a:hover {
   text-align: center;
   margin-bottom: 1rem;
 }
+@media (max-width: 720px) {
+  .article_section {
+    flex-direction: column;
+  }
+}
 .article_section {
   display: flex;
   gap: 1rem;
 }
-.article_section > article {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 30rem;
-}
+
 .article_section a {
   color: transparent;
 }
 .art_tile {
   background-position: center;
-  background-repeat: none;
   background-size: cover;
-  color: transparent;
-  text-align: center;
   border-radius: 20px;
+  flex: 1;
+  text-align: center;
+  height: 30rem;
 }
-.art_tile h2 {
-  position: relative;
-  top: 50%;
+.art1 {
+  background-image: url(./images/Lucky-Shrub-logos/backyard.webp);
+}
+.art2 {
+  background-image: url(./images/Lucky-Shrub-logos/frontyard.jpeg);
+}
+.art3 {
+  background-image: url(./images/Lucky-Shrub-logos/fullyard.jpg);
 }
 .article_overlay {
   background-color: transparent;
   width: 100%;
-  height: 100%;
+  height: 30rem;
   border-radius: 20px;
 }
 .article_overlay:hover {
@@ -184,14 +188,9 @@ nav a:hover {
 .article_overlay:hover a {
   color: #fff8f0e0;
 }
-.art1 {
-  background-image: url(./images/Lucky-Shrub-logos/backyard.webp);
-}
-.art2 {
-  background-image: url(./images/Lucky-Shrub-logos/frontyard.jpeg);
-}
-.art3 {
-  background-image: url(./images/Lucky-Shrub-logos/fullyard.jpg);
+.art_tile h2 {
+  position: relative;
+  top: 50%;
 }
 
 /* Footer */
